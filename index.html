@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Mugabe Richard" content="Javascript Assignment">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body class="bg-gray-200">
+    <div class="flex justify-between ">
+        <div class="m-10 rounded-xl border bg-white h-8 w-72">
+            <i class="ml-6 fas fa-search"></i>
+            <input type="text" placeholder="Search for a country" id="search-country">
+        </div>
+        <div class="m-10 rounded-xl border bg-white h-10 w-40" >
+            <div class="flex justify-between">
+                <select id="regions">
+                    <option id="regions">Filter By Region</option>
+                    <button class=" mr-2" id="toggle"> <i class="fas fa-chevron-down"></i></button><br>
+                    <option>All</option>
+                    <option value="africa">Africa</option>
+                    <option value="europe">Europe</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+        </div>       
+    </div>
+    <div id="container" class="grid grid-cols-4 gap-12 m-6">
+
+    </div>
+</body>
+<script src="/src/index.js"></script>
+</html>

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex-image {
+      @apply sm:px-16 lg:px-8 lg:mx-8 mx-8 px-8 sm:mx-16;
+    }
+    .welcome-text {
+        @apply font-semibold md:font-bold mt-2 text-lg mr-14 md:text-3xl;
+    }
+    .start-btn {
+        @apply md:py-2 py-0.5 px-1 md:px-3 font-bold text-white bg-gradient-to-r from-red-500  to-gray-500;
+    }
+    
+    
+}
