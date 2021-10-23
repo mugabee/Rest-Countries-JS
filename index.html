@@ -1,37 +1,75 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Mugabe Richard" content="Javascript Assignment">
-    <title>Rest Countries</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/public/styles.css">
-</head>
-<body class="bg-gray-200">
-    <div class="flex justify-between ">
-        <div class="m-10 rounded-xl border bg-white h-8 w-72">
-            <i class="ml-6 fas fa-search"></i>
-            <input type="text" placeholder="Search for a country" id="search-country">
-        </div>
-        <div class="m-10 rounded-xl border bg-white h-10 w-40" >
-            <div class="flex justify-between">
-                <select id="regions">
-                    <option id="regions">Filter By Region</option>
-                    <button class=" mr-2" id="toggle"> <i class="fas fa-chevron-down"></i></button><br>
-                    <option>All</option>
-                    <option value="africa">Africa</option>
-                    <option value="europe">Europe</option>
-                    <option value="americas">Americas</option>
-                    <option value="asia">Asia</option>
-                    <option value="oceania">Oceania</option>
-                </select>
-            </div>
-        </div>       
-    </div>
-    <div id="container" class="grid grid-cols-4 gap-12 m-6">
+  
 
+    
+  </head>
+  <body class="m-0 p-0 box-border w-full min-h-screen">
+    <div class="container w-full p-32 flex justify-between">
+      <h1>Hi, Where Are You</h1>
+      <button class="toggle"><i class="far fa-moon moon"></i>Dark mode</button>
     </div>
-</body>
-<script src="/src/index.js"></script>
+    <div class="container ">
+      <div class="form-control">
+        <input type="text" placeholder="Search Country" class="search" />
+        <i class="fas fa-search search"></i>
+      </div>
+      <div class="dropDownCon">
+        <div class="dropDown">
+          <p>FilterBy Region</p>
+          <button class="toggle"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="drop showDropDown">
+          <p class="region">All</p>
+          <p class="region">Africa</p>
+          <p class="region">America</p>
+          <p class="region">Asia</p>
+          <p class="region">Europe</p>
+          <p class="region">Oceania</p>
+        </div>
+      </div>
+    </div>
+    <div class="countries"></div>
+    <div class="countryModel show">
+      <button class="back">Back</button>
+      <div class="model">
+        <div class="leftModel">
+          <img src="https://flagcdn.com/w320/it.png" alt="" />
+        </div>
+
+        <div class="rightModel">
+          <h1>German</h1>
+          <div class="modelInfo">
+            <div class="innerLeft inner">
+                <h5 class="countryName">${data.name.common}</h5>
+                <p><strong>Population</strong>${data.population}</p>
+                <p class="regionName"><strong>Region</strong>${data.region}</p>
+                <p><strong>Capital</strong>${data.capital}</p>
+              </div>
+              <div class="innerRight inner">
+                <h5 class="countryName">${data.name.common}</h5>
+                <p><strong>Population</strong>${data.population}</p>
+                <p class="regionName"><strong>Region</strong>${data.region}</p>
+                <p><strong>Capital</strong>${data.capital}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
 </html>

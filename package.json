@@ -1,15 +1,23 @@
 {
-  "name": "exercise-2",
+  "name": "rest-countries-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "index.html",
-    "build-css": "tailwind build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugabee/Rest-Countries-JS.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mugabee/Rest-Countries-JS/issues"
+  },
+  "homepage": "https://github.com/mugabee/Rest-Countries-JS#readme",
   "dependencies": {
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.17"
   }
 }
